@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myntra Clone</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+  <header>
+    <div class="logo_container">
+      <a href="#"><img class="myntra_home" src="myntra_logo.webp" alt="Myntra Home"></a>
+    </div>
+    <nav class="nav_bar">
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#">Studio <sup>New</sup></a>
+    </nav>
+    <div class="search_bar">
+      <span class="material-symbols-outlined search_icon">search</span>
+      <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+    <div class="action_bar">
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">person</span>
+        <span class="action_name">Profile</span>
+      </div>
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">favorite</span>
+        <span class="action_name">Wishlist</span>
+      </div>
+      <a class="action_container" href="pages/bag.html">
+        <span class="material-symbols-outlined action_icon">shopping_bag</span>
+        <span class="action_name">Bag</span>
+        <span class="bag-item-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+
+
+    <div class="filters">
+  <h3>Filters</h3>
+
+  <div>
+    <label>Price:</label>
+    <select id="price-filter">
+      <option value="all">All</option>
+      <option value="lt1000">Less than ₹1000</option>
+      <option value="btw1000-2000">₹1000 - ₹2000</option>
+      <option value="gt2000">More than ₹2000</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Company:</label>
+    <select id="company-filter">
+      <option value="all">All</option>
+      <option value="ADIDAS">ADIDAS</option>
+      <option value="CUKOO">CUKOO</option>
+      <option value="Carlton London">Carlton London</option>
+      <option value="Nike">Nike</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Rating:</label>
+    <select id="rating-filter">
+      <option value="all">All</option>
+      <option value="4.5">4.5+</option>
+      <option value="4">4+</option>
+      <option value="3.5">3.5+</option>
+    </select>
+  </div>
+</div>
+
+
+
+
+
+    <div class="items-container"></div>
+  </main>
+
+  <footer>
+    <div class="footer_container">
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gift Card</a>
+        <a href="#">Myntra Insider</a>
+      </div>
+      <div class="footer_column">
+        <h3>USEFUL LINKS</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">T&C</a>
+        <a href="#">Returns</a>
+        <a href="#">Track Orders</a>
+      </div>
+      <div class="footer_column">
+        <h3>CUSTOMER POLICIES</h3>
+        <a href="#">Payments</a>
+        <a href="#">Shipping</a>
+        <a href="#">Cancellation</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+    <hr />
+    <div class="copy_right">
+      © 2024 www.myntra.com. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/items.js"></script>
+  <script src="scripts/index.js"></script>
+
+</body>
+</html>

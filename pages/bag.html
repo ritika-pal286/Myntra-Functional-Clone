@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bag - Myntra Clone</title>
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="/css/bag.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+  <header>
+    <div class="logo_container">
+      <a href="../index.html">
+        <img class="myntra_home" src="../myntra_logo.webp" alt="Myntra Home" />
+      </a>
+    </div>
+    <nav class="nav_bar">
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#">Studio <sup>New</sup></a>
+    </nav>
+    <div class="search_bar">
+      <span class="material-symbols-outlined search_icon">search</span>
+      <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+    <div class="action_bar">
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">person</span>
+        <span class="action_name">Profile</span>
+      </div>
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">favorite</span>
+        <span class="action_name">Wishlist</span>
+      </div>
+      <a class="action_container" href="#">
+        <span class="material-symbols-outlined action_icon">shopping_bag</span>
+        <span class="action_name">Bag</span>
+        <span class="bag-item-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="bag-page">
+    <div class="bag-items-container"></div>
+
+    <div class="bag-summary">
+      <div class="bag-details-container">
+        <div class="price-header">PRICE DETAILS (items)</div>
+        <div class="price-item">
+          <span>Total MRP</span>
+          <span class="price-item-value" id="total-mrp">Rs 0</span>
+        </div>
+        <div class="price-item">
+          <span>Discount on MRP</span>
+          <span class="price-item-value priceDetail-base-discount" id="discount">-Rs 0</span>
+        </div>
+        <div class="price-item">
+          <span>Convenience Fee</span>
+          <span class="price-item-value">FREE</span>
+        </div>
+        <div class="price-footer">
+          <span>Total Amount</span>
+          <span class="price-item-value" id="total-amount">Rs 0</span>
+        </div>
+      </div>
+      <button class="btn-place-order">PLACE ORDER</button>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../data/items.js"></script>
+  <script src="../scripts/bag.js"></script>
+</body>
+</html>
